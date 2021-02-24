@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+p {
+  font-family: "DotGothic16", sans-serif;
+}
 .duck {
   display: block;
   background-image: url(img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png);
@@ -71,4 +73,11 @@
   gap: 10px;
   right: 15px;
   top: 15px;
+}
+
+.FullScreen {
+  position: absolute;
+  bottom: 15px;
+  font-weight: 800;
+  right: 15px;
 }

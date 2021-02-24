@@ -50,9 +50,13 @@ document.addEventListener("keyup", function (event) {
 //Bird Shooting
 document.querySelector('.duck').addEventListener("click", function () {
     shooterScore++;
-    birdDead = true;
     document.querySelector('.score').innerHTML = shooterScore;
     duck.style.backgroundImage = 'url(img/deadDuck.png)';
+    setTimeout(function () {
+        birdDead = true;
+        duck.style.backgroundImage = 'url(img/duckdead.png)';
+    }, 500);
+
 })
 
 
@@ -75,11 +79,21 @@ let t = setInterval(function () {
         duckBottom--
         duck.style.bottom = duckBottom + '%';
         if (duckBottom <= 5) {
+            duck.style.transform = "rotate(90deg)"
             birdDead = false;
-
+            setTimeout(function () {
+                resetBird();
+            }, 500);
         }
     }
 }, 20);
+
+function resetBird() {
+    duckBottom = 50;
+    duckLeft = 50;
+    duck.style.backgroundImage = "url(img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png)"
+    duck.style.transform = "rotate(0deg)"
+}
 // Dany //
 
 document.querySelector(".FullScreen").addEventListener("click", openFullscreen);

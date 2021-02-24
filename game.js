@@ -90,7 +90,7 @@ let t = setInterval(function () {
             birdDead = false;
             setTimeout(function () {
                 resetBird();
-            }, 1000);
+            }, 2000);
         }
     }
     if (bullets == 2) {
@@ -116,7 +116,7 @@ function resetBird() {
 }
 
 document.querySelector(".gameSpace").addEventListener('click', function (event) {
-    if (event.target.class == ".gameSpace") {
+    if (event.target.classList.contains(".gameSpace")) {
         bullets--
         console.log("Bang");
     }

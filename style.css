@@ -76,7 +76,10 @@ p {
 .CR {
   position: absolute;
   right: 50px;
-  bottom: 10px;
+  bottom: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 6px orange;
+          box-shadow: 0 6px orange;
 }
 
 @-webkit-keyframes myfirst {

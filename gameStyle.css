@@ -38,15 +38,14 @@ p {
   top: 50px;
   font-size: 100px;
 }
-.gameSpace{
-    
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(img/394788.png);
-    background-size: cover;
-    background-position: bottom;
-    position: relative;
-    cursor: url(img/unnamed.png) 16 16, pointer;
+.gameSpace {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(img/394788.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  cursor: url(img/unnamed.png) 16 16, pointer;
 }
 .NiceShot {
   width: 300px;
@@ -69,9 +68,9 @@ p {
   color: white;
   font-family: "DotGothic16", sans-serif;
 }
-.deathAnime{
-    transition-duration: 2s;
-    bottom:100%;
+.deathAnime {
+  transition-duration: 2s;
+  bottom: 100%;
 }
 .BShot {
   position: absolute;
@@ -90,6 +89,14 @@ p {
 .FullScreen {
   position: absolute;
   bottom: 15px;
+  font-weight: 800;
+  right: 15px;
+}
+
+.FullScreenClose {
+  position: absolute;
+  bottom: 15px;
+  display: none;
   font-weight: 800;
   right: 15px;
 }

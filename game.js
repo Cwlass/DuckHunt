@@ -77,3 +77,32 @@ let t = setInterval(function () {
         }
     }
 }, 20);
+
+// Dany //
+
+document.querySelector(".FullScreen").addEventListener("click", openFullscreen);
+let elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) { 
+    elem.requestFullscreen();
+    document.querySelector(".FullScreen").style.display = "none" ; 
+    document.querySelector(".FullScreenClose").style.display = "block" ; 
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+document.querySelector(".FullScreenClose").addEventListener("click", closeFullscreen);
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+      document.querySelector(".FullScreen").style.display = "block" ; 
+    document.querySelector(".FullScreenClose").style.display = "none" ; 
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+  }

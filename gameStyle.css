@@ -1,38 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.duck{
-    display: block;
-    background-image: url(img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    bottom:50%;
-    transform: translateX(-50%);
-    transform: translatey(-50%);
+.duck {
+  display: block;
+  background-image: url(img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  transform: translatey(-50%);
 }
-.gameSpace{
+.gameSpace {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(img/394788.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  cursor: url(img/unnamed.png) 16 16, pointer;
+}
+.score {
+  font-family: "DotGothic16", sans-serif;
+  position: absolute;
+  left: 90%;
+  top: 10%;
+  font-size: 5em;
+}
 
-min-height: 100vh;
-width: 100%;
-background-image: url(img/394788.png);
-background-size: cover;
-background-position: bottom;
-position: relative;
-cursor: url(img/unnamed.png) 16 16, pointer;
+.NiceShot {
+  width: 300px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
 }
-.score{
-    font-family: "DotGothic16", sans-serif;
-    position:absolute;
-    left:90%;
-    top: 10%;
-    font-size: 5em;
+.NiceShot img {
+  width: 150px;
+}
+.NiceShot p {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  font-family: "DotGothic16", sans-serif;
 }

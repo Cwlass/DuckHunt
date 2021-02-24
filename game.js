@@ -1,6 +1,7 @@
 //Variable intialisation
 const gameOver = document.querySelector('.gameOver');
 const gameSpace = document.querySelector('.gameSpace');
+let hasMoved = false;
 let previousScore = 0;
 let shooterScore = 0;
 let birdDead = false;
@@ -12,6 +13,7 @@ let left = false;
 let right = false;
 let bullets = 3;
 let canMove = true;
+let isSinglePlayer = false;
 duck = document.querySelector('.duck');
 //Directoinal Control
 document.addEventListener("keydown", function (event) {
@@ -83,7 +85,8 @@ let t = setInterval(function () {
         }
         duck.style.bottom = duckBottom + '%';
         duck.style.left = duckLeft + '%';
-    } else {
+
+    } if (birdDead) {
         if (duckBottom > 5) {
             duckBottom--
         }
@@ -99,6 +102,7 @@ let t = setInterval(function () {
             document.querySelector('.HScore').style.left = "15px";
         }
     }
+
     if (bullets == 2) {
         document.querySelector(".Bullet1").style.display = "none";
     }
@@ -113,13 +117,13 @@ let t = setInterval(function () {
 }, 20);
 
 function resetBird() {
+    console.log('reseting');
     duckBottom = 50;
     duckLeft = 50;
     duck.style.backgroundImage = "url(img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png)"
     duck.style.transform = "rotate(0deg)"
     document.querySelector(".NiceShot").style.bottom = "-200%";
     canMove = true;
-    previousScore = shooterScore;
 
 }
 

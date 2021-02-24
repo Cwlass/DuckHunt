@@ -54,7 +54,7 @@ document.addEventListener("keyup", function (event) {
 
 //Bird Shooting
 document.querySelector('.duck').addEventListener("click", function () {
-    if (birdDead) {
+    if (!birdDead) {
         canMove = false;
         shooterScore++;
         document.querySelector('.score').innerHTML = shooterScore;

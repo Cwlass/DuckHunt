@@ -54,15 +54,17 @@ document.addEventListener("keyup", function (event) {
 
 //Bird Shooting
 document.querySelector('.duck').addEventListener("click", function () {
-    canMove = false;
-    shooterScore++;
-    document.querySelector('.score').innerHTML = shooterScore;
-    duck.style.backgroundImage = 'url(img/deadDuck.png)';
-    setTimeout(function () {
-        birdDead = true;
-        duck.style.backgroundImage = 'url(img/duckdead.png)';
-    }, 500);
-    document.querySelector(".NiceShot").style.bottom = "0%";
+    if (birdDead) {
+        canMove = false;
+        shooterScore++;
+        document.querySelector('.score').innerHTML = shooterScore;
+        duck.style.backgroundImage = 'url(img/deadDuck.png)';
+        setTimeout(function () {
+            birdDead = true;
+            duck.style.backgroundImage = 'url(img/duckdead.png)';
+        }, 500);
+        document.querySelector(".NiceShot").style.bottom = "0%";
+    }
 })
 
 
@@ -178,3 +180,11 @@ function closeFullscreen() {
         document.msExitFullscreen();
     }
 }
+document.querySelector(".BackMenu").addEventListener("click", openHome);
+function openHome() {
+    document.querySelector(".HomeBanner").style.display = "block";
+    document.querySelector(".gameSpace").style.display = "none";
+    resetGame();
+}
+
+

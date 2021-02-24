@@ -73,6 +73,7 @@ let t = setInterval(function () {
         duck.style.bottom = duckBottom + '%';
         if (duckBottom <= 5) {
             birdDead = false;
+
         }
     }
 }, 20);

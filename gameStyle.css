@@ -169,3 +169,12 @@ p {
   box-shadow: 0 6px orange;
   transition-duration: 1s;
 }
+
+@media only screen and (max-width: 500px) {
+  .HScore {
+    font-size: 12px;
+  }
+  .score {
+    font-size: 50px;
+  }
+}

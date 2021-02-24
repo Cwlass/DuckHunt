@@ -21,8 +21,7 @@ p {
   position: absolute;
   left: 50%;
   bottom: 50%;
-  transform: translateX(-50%);
-  transform: translatey(-50%);
+  transform: translate(-50%, -50%);
 }
 .gameSpace {
   min-height: 100vh;
@@ -125,7 +124,7 @@ p {
   top: 50%;
   cursor: pointer;
   left: 50%;
-  z-index: 10;
+  z-index: 100;
   transform: translate(-50%, -50%);
 }
 
@@ -168,6 +167,17 @@ p {
   top: 100px;
   box-shadow: 0 6px orange;
   transition-duration: 1s;
+}
+
+.Hide {
+  position: absolute;
+  z-index: 5;
+  bottom: 45%;
+  width: 150px;
+  cursor: pointer;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 500px) {

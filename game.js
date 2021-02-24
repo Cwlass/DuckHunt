@@ -116,15 +116,14 @@ function resetBird() {
 }
 
 document.querySelector(".gameSpace").addEventListener('click', function (event) {
-    if (event.target.classList.contains(".gameSpace")) {
+    if (event.target.classList.contains("gameSpace")) {
         bullets--
-        console.log("Bang");
     }
 
 
 })
 
-gameOver.querySelector('p').addEventListener('click', resetGame);
+gameOver.querySelector('.Loser').addEventListener('click', resetGame);
 
 function resetGame() {
     bullets = 3;

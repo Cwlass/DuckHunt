@@ -1,6 +1,6 @@
 
-let duckLeft = 5;
-let duckBottom = 90;
+let duckLeft = 50;
+let duckBottom = 50;
 let down = false;
 let up = false;
 let left = false;
@@ -44,13 +44,13 @@ document.addEventListener("keyup", function (event) {
     }
 })
 let t = setInterval(function () {
-    if (up) { duckBottom++; }
-    if (down) { duckBottom--; }
-    if (left) {
+    if (up && duckBottom < 95) { duckBottom++; }
+    if (down && duckBottom > 5) { duckBottom--; }
+    if (left && duckLeft > 5) {
         duckLeft--;
         duck.style.transform = "scaleX(-1)";
     }
-    if (right) {
+    if (right && duckLeft < 94) {
         duckLeft++;
         duck.style.transform = "scaleX(1)";
     }

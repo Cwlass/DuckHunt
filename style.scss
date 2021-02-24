@@ -73,7 +73,7 @@ p {
     transform: scaleX(1);
   }
   80% {
-    left: 95%;
+    left: 90%;
     top: 48%;
     transform: scaleX(-1);
   }
@@ -98,7 +98,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  a {
+  p {
     padding: 15px 25px;
     font-size: 20px;
     text-align: center;
@@ -112,12 +112,12 @@ p {
     font-weight: 800;
     font-family: "DotGothic16", sans-serif;
   }
-  a:hover {
+  p:hover {
     background-color: orange;
     color: rgb(0, 255, 234);
     box-shadow: 0 9px rgb(0, 255, 234);
   }
-  a:active {
+  p:active {
     background-color: orange;
     box-shadow: 0 5px rgb(0, 255, 234);
     transform: translateY(4px);

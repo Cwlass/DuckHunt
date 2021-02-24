@@ -1,0 +1,16 @@
+.duck{
+    display: block;
+    background: red;
+    height: 100px;
+    width: 100px;
+    transition-duration: 1s;
+    margin-left: 0%;
+    margin-top: 0%;
+    border-radius: 50%;
+}
+.gameSpace{
+    width: 70%;
+    height: 900px;
+margin: auto;
+background-color: blue;
+}

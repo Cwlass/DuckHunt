@@ -57,7 +57,7 @@ document.querySelector('.duck').addEventListener("click", function () {
         birdDead = true;
         duck.style.backgroundImage = 'url(img/duckdead.png)';
     }, 500);
-
+    document.querySelector(".Dog").style.bottom = "0%";
 })
 
 

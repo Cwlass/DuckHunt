@@ -16,6 +16,8 @@ let canMove = true;
 let isSinglePlayer = false;
 duck = document.querySelector('.duck');
 //Directoinal Control
+
+
 document.addEventListener("keydown", function (event) {
     switch (event.key) {
         case "ArrowDown":
@@ -72,6 +74,7 @@ document.querySelector('.duck').addEventListener("click", function () {
 
 // All automatique handling
 let t = setInterval(function () {
+
     if (!birdDead && canMove) {
         if (up && duckBottom < 95) { duckBottom++; }
         if (down && duckBottom > 5) { duckBottom--; }

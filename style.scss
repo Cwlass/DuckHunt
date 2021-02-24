@@ -18,13 +18,14 @@ p {
 
 #Set {
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 10px;
   background-color: rgba(255, 255, 255, 0);
   color: orange;
   font-size: 20px;
   text-decoration: none;
   border-radius: 0;
+  cursor: pointer;
 }
 
 p {
@@ -193,6 +194,7 @@ p {
 .SetClose {
   position: absolute;
   top: 10px;
+  cursor: pointer;
   right: 10px;
   i {
     font-size: 50px;

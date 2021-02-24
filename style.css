@@ -350,5 +350,8 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .SetBanner {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

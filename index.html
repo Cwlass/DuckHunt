@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="gameStyle.css" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <section class="HomeBanner">
-      <div class="Loader">
-        <h1>Welcome to the game</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="gameStyle.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="HomeBanner">
+    <div class="Loader">
+      <h1>Welcome to the game</h1>
+    </div>
+    <section class="MainCoint">
+      <div class="SetBanner">
+        <p id="SetClose" class="SetClose">
+          <i class="fas fa-window-close"></i>
+        </p>
+        <img class="Inst" src="/img/arrowkeys.png" alt="" />
+        <p>Use the arrowkeys to move the duck</p>
+        <p>
+          Use the mouse to move to the target and click on the duck to kill
+          her
+        </p>
       </div>
-      <section class="MainCoint">
-        <div class="SetBanner">
-          <p id="SetClose" class="SetClose">
-            <i class="fas fa-window-close"></i>
-          </p>
-          <img class="Inst" src="/img/arrowkeys.png" alt="" />
-          <p>Use the arrowkeys to move the duck</p>
-          <p>
-            Use the mouse to move to the target and click on the duck to kill
-            her
-          </p>
+      <img class="duck1" src="/img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png" alt="" />
+      <p id="Set"><i class="fas fa-question"></i></p>
+      <p class="CR">Copyright: D&D</p>
+      <div class="HomeContainer">
+        <img src="/img/Duck_Hunt_Logo.webp" alt="" />
+        <div class="TwoCol">
+          <h3 class="BestS">Best score</h3>
+          <h2 class="Score">0</h2>
         </div>
-        <img
-          class="duck1"
-          src="/img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png"
-          alt=""
-        />
-        <p id="Set"><i class="fas fa-question"></i></p>
-        <p class="CR">Copyright: D&D</p>
-        <div class="HomeContainer">
-          <img src="/img/Duck_Hunt_Logo.webp" alt="" />
-          <div class="TwoCol">
-            <h3 class="BestS">Best score</h3>
-            <h2 class="Score">180</h2>
-          </div>
-          <div class="TwoRow">
-            <p class="SinglePlayer">Single Player</p>
-            <p>Multiplayer</p>
-          </div>
+        <div class="TwoRow">
+          <p class="SinglePlayer">Single Player</p>
+          <p>Multiplayer</p>
         </div>
-      </section>
+      </div>
     </section>
-    <main>
-      <div id="cursor"></div>
-      <section class="gameSpace">
-        <div class="gameOver">
-          <p class="Loser">LOSER</p>
-          <p>Play again</p>
-        </div>
-        <div class="NiceShot">
-          <p>Nice shot !!!</p>
-          <img class="Dog" src="/img/dog.png" alt="" />
-        </div>
-        <div class="BShot">
-          <img class="Bullet1" src="img/bullet.png" alt="" />
-          <img class="Bullet2" src="img/bullet.png" alt="" />
-          <img class="Bullet3" src="img/bullet.png" alt="" />
-        </div>
-        <div class="duck"></div>
-        <p class="score">0</p>
-        <p class="FullScreen">Fullscreen</p>
-        <p class="FullScreenClose">Close</p>
-        <p class="BackMenu">Menu</p>
-      </section>
-    </main>
-    <script src="game.js"></script>
-    <script src="scriptFront.js"></script>
-  </body>
+  </section>
+  <main>
+    <div id="cursor"></div>
+    <section class="gameSpace">
+      <div class="gameOver">
+        <p class="Loser">LOSER</p>
+        <p>Play again</p>
+      </div>
+      <div class="NiceShot">
+        <p>Nice shot !!!</p>
+        <img class="Dog" src="/img/dog.png" alt="" />
+      </div>
+      <div class="BShot">
+        <img class="Bullet1" src="img/bullet.png" alt="" />
+        <img class="Bullet2" src="img/bullet.png" alt="" />
+        <img class="Bullet3" src="img/bullet.png" alt="" />
+      </div>
+      <div class="duck"></div>
+      <p class="score">0</p>
+      <p class="FullScreen">Fullscreen</p>
+      <p class="FullScreenClose">Close</p>
+      <p class="BackMenu">Menu</p>
+    </section>
+  </main>
+  <script src="game.js"></script>
+  <script src="scriptFront.js"></script>
+</body>
+
 </html>

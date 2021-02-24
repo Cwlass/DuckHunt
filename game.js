@@ -142,7 +142,7 @@ function resetGame() {
     if (shooterScore > document.querySelector(".Score").innerHTML) {
         document.querySelector(".Score").innerHTML = shooterScore;
     }
-
+    previousScore = shooterScore;
     shooterScore = 0;
     gameOver.style.display = "none";
     gameSpace.style.display = "none";

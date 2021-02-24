@@ -40,6 +40,7 @@ p {
 }
 .gameSpace {
   min-height: 100vh;
+  display: none;
   width: 100%;
   background-image: url(img/394788.png);
   background-size: cover;

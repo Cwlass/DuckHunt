@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -21,7 +21,6 @@ p {
 #Set {
   position: absolute;
   right: 50px;
-  cursor: pointer;
   top: 10px;
   background-color: rgba(255, 255, 255, 0);
   color: orange;
@@ -47,14 +46,14 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
 }
 
@@ -62,14 +61,14 @@ p {
   max-width: 500px;
 }
 
-.duck {
+.duck1 {
   position: absolute;
   left: 0;
   width: 80px;
   -webkit-animation: myfirst 8s;
-  animation: myfirst 8s;
+          animation: myfirst 8s;
   -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .CR {
@@ -87,19 +86,19 @@ p {
     right: 00%;
     top: 48%;
     -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+            transform: scaleX(1);
   }
   80% {
     left: 95%;
     top: 48%;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+            transform: scaleX(-1);
   }
   100% {
     left: 0%;
     top: 48%;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+            transform: scaleX(-1);
   }
 }
 
@@ -112,19 +111,19 @@ p {
     right: 00%;
     top: 48%;
     -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+            transform: scaleX(1);
   }
   80% {
     left: 95%;
     top: 48%;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+            transform: scaleX(-1);
   }
   100% {
     left: 0%;
     top: 48%;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+            transform: scaleX(-1);
   }
 }
 
@@ -135,14 +134,14 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .TwoRow {
@@ -152,14 +151,14 @@ p {
   gap: 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .TwoRow a {
@@ -173,7 +172,7 @@ p {
   border: none;
   border-radius: 15px;
   -webkit-box-shadow: 0 9px orange;
-  box-shadow: 0 9px orange;
+          box-shadow: 0 9px orange;
   font-weight: 800;
   font-family: "DotGothic16", sans-serif;
 }
@@ -182,15 +181,15 @@ p {
   background-color: orange;
   color: #00ffea;
   -webkit-box-shadow: 0 9px #00ffea;
-  box-shadow: 0 9px #00ffea;
+          box-shadow: 0 9px #00ffea;
 }
 
 .TwoRow a:active {
   background-color: orange;
   -webkit-box-shadow: 0 5px #00ffea;
-  box-shadow: 0 5px #00ffea;
+          box-shadow: 0 5px #00ffea;
   -webkit-transform: translateY(4px);
-  transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .TwoCol {
@@ -200,14 +199,14 @@ p {
   gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .TwoCol .BestS {
@@ -222,22 +221,22 @@ p {
   gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   width: 100%;
   -webkit-animation-name: loader;
-  animation-name: loader;
+          animation-name: loader;
   -webkit-animation-duration: 6s;
-  animation-duration: 6s;
+          animation-duration: 6s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   overflow: hidden;
   z-index: 99;
 }
@@ -267,18 +266,18 @@ p {
 .SetBanner {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 600px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 99;
   top: 50%;
   opacity: 0%;
@@ -287,12 +286,12 @@ p {
   border-radius: 10px;
   height: 700px;
   -webkit-box-shadow: 0 9px orange;
-  box-shadow: 0 9px orange;
+          box-shadow: 0 9px orange;
   text-align: center;
   padding: 50px;
   background-color: black;
   -webkit-transition-duration: 2s;
-  transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 .SetBanner p {

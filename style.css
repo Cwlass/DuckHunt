@@ -1,4 +1,122 @@
-Main {
-  background-image: url(/img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png);
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h3,
+h2 {
+  font-family: "DotGothic16", sans-serif;
+}
+
+.MainCoint {
+  background-image: url(/img/394788.png);
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MainCoint img {
+  max-width: 500px;
+}
+
+.HomeContainer {
+  gap: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TwoRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TwoRow a {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: orange;
+  background-color: #00ffea;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 9px orange;
+          box-shadow: 0 9px orange;
+  font-weight: 800;
+  font-family: "DotGothic16", sans-serif;
+}
+
+.TwoRow a:hover {
+  background-color: orange;
+  color: #00ffea;
+  -webkit-box-shadow: 0 9px #00ffea;
+          box-shadow: 0 9px #00ffea;
+}
+
+.TwoRow a:active {
+  background-color: orange;
+  -webkit-box-shadow: 0 5px #00ffea;
+          box-shadow: 0 5px #00ffea;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.TwoCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TwoCol .BestS {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */

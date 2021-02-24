@@ -1,4 +1,4 @@
-
+let shooterScore = 0;
 let duckLeft = 50;
 let duckBottom = 50;
 let down = false;

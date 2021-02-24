@@ -172,7 +172,7 @@ p {
 .Hide {
   position: absolute;
   z-index: 5;
-  bottom: 45%;
+  bottom: 0;
   width: 150px;
   cursor: pointer;
   cursor: none;

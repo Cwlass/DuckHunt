@@ -1,6 +1,7 @@
 //Variable intialisation
 const gameOver = document.querySelector('.gameOver');
 const gameSpace = document.querySelector('.gameSpace');
+let previousScore = 0;
 let shooterScore = 0;
 let birdDead = false;
 let duckLeft = 50;
@@ -65,7 +66,7 @@ document.querySelector('.duck').addEventListener("click", function () {
 })
 
 
-// All movement handling
+// All automatique handling
 let t = setInterval(function () {
     if (!birdDead && canMove) {
         if (up && duckBottom < 95) { duckBottom++; }
@@ -92,6 +93,9 @@ let t = setInterval(function () {
                 resetBird();
             }, 2000);
         }
+        if (previousScore < shooterScore) {
+            document.querySelector('.HScore').style.left = "15px";
+        }
     }
     if (bullets == 2) {
         document.querySelector(".Bullet1").style.display = "none";
@@ -113,6 +117,8 @@ function resetBird() {
     duck.style.transform = "rotate(0deg)"
     document.querySelector(".NiceShot").style.bottom = "-200%";
     canMove = true;
+    previousScore = shooterScore;
+
 }
 
 document.querySelector(".gameSpace").addEventListener('click', function (event) {
@@ -139,6 +145,8 @@ function resetGame() {
     gameOver.style.display = "none";
     gameSpace.style.display = "none";
     document.querySelector(".HomeBanner").style.display = "block";
+    document.querySelector('.HScore').style.left = "-400px";
+    document.querySelector('.score').innerHTML = shooterScore;
 }
 
 

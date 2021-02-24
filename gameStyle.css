@@ -164,8 +164,8 @@ p {
 .HScore {
   position: absolute;
   border-radius: 15px;
-  left:-400px;
-  top: 15px;
+  left: -400px;
+  top: 100px;
   box-shadow: 0 6px orange;
   transition-duration: 1s;
 }

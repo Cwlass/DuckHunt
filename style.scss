@@ -7,6 +7,7 @@
 }
 body {
   position: relative;
+  overflow: hidden;
 }
 h3,
 h2,
@@ -41,6 +42,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   img {
     max-width: 500px;
   }
@@ -71,7 +73,7 @@ p {
     transform: scaleX(1);
   }
   80% {
-    left: 90%;
+    left: 95%;
     top: 48%;
     transform: scaleX(-1);
   }
@@ -143,7 +145,7 @@ p {
   position: absolute;
   width: 100%;
   animation-name: loader;
-  animation-duration: 1s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   overflow: hidden;
   z-index: 99;
@@ -163,11 +165,37 @@ p {
 .SetBanner {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 500px;
-  display: none;
+  width: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 99;
   top: 50%;
-  left: 50%;
-  height: 500px;
-  background-color: #fff;
+  opacity: 0%;
+  gap: 30px;
+  left: 100%;
+  border-radius: 10px;
+  height: 700px;
+  box-shadow: 0 9px orange;
+  text-align: center;
+  padding: 50px;
+  background-color: black;
+  transition-duration: 2s;
+  p {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.Inst {
+  width: 300px;
+}
+
+.SetClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  i {
+    font-size: 50px;
+    border-radius: 50px;
+  }
 }

@@ -19,4 +19,10 @@ function closeHome() {
   
 }
 
+document.querySelector(".BackMenu").addEventListener("click", openHome);
+function openHome() {
+  document.querySelector(".HomeBanner").style.display = "block";
+  document.querySelector(".gameSpace").style.display = "none";
+}
+
 

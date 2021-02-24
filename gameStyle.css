@@ -125,3 +125,10 @@ p {
 .gameOver p {
   font-size: 50px;
 }
+
+.BackMenu {
+  position: absolute;
+  bottom: 15px;
+  font-weight: 800;
+  left: 15px;
+}

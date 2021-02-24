@@ -43,6 +43,15 @@ document.addEventListener("keyup", function (event) {
             return;
     }
 })
+
+document.querySelector('.duck').addEventListener("click", function () {
+
+})
+
+function killBird() {
+
+}
+
 let t = setInterval(function () {
     if (up && duckBottom < 95) { duckBottom++; }
     if (down && duckBottom > 5) { duckBottom--; }
@@ -56,4 +65,4 @@ let t = setInterval(function () {
     }
     duck.style.bottom = duckBottom + '%';
     duck.style.left = duckLeft + '%';
-}, 1);
+}, 20);

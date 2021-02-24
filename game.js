@@ -115,9 +115,13 @@ function resetBird() {
     canMove = true;
 }
 
-document.querySelector(".gameSpace").addEventListener('click', function () {
-    console.log("Bang");
-    bullets--
+document.querySelector(".gameSpace").addEventListener('click', function (event) {
+    if (event.target.class == ".gameSpace") {
+        bullets--
+        console.log("Bang");
+    }
+
+
 })
 
 gameOver.querySelector('p').addEventListener('click', resetGame);

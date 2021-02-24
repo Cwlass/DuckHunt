@@ -1,3 +1,4 @@
+//Variable intialisation
 let shooterScore = 0;
 let birdDead = false;
 let duckLeft = 50;
@@ -7,6 +8,7 @@ let up = false;
 let left = false;
 let right = false;
 duck = document.querySelector('.duck');
+//Directoinal Control
 document.addEventListener("keydown", function (event) {
     switch (event.key) {
         case "ArrowDown":
@@ -45,6 +47,7 @@ document.addEventListener("keyup", function (event) {
     }
 })
 
+//Bird Shooting
 document.querySelector('.duck').addEventListener("click", function () {
     shooterScore++;
     birdDead = true;
@@ -53,7 +56,7 @@ document.querySelector('.duck').addEventListener("click", function () {
 })
 
 
-
+// All movement handling
 let t = setInterval(function () {
     if (!birdDead) {
         if (up && duckBottom < 95) { duckBottom++; }
@@ -77,32 +80,31 @@ let t = setInterval(function () {
         }
     }
 }, 20);
-
 // Dany //
 
 document.querySelector(".FullScreen").addEventListener("click", openFullscreen);
 let elem = document.documentElement;
 function openFullscreen() {
-  if (elem.requestFullscreen) { 
-    elem.requestFullscreen();
-    document.querySelector(".FullScreen").style.display = "none" ; 
-    document.querySelector(".FullScreenClose").style.display = "block" ; 
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+        document.querySelector(".FullScreen").style.display = "none";
+        document.querySelector(".FullScreenClose").style.display = "block";
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
 }
 
 document.querySelector(".FullScreenClose").addEventListener("click", closeFullscreen);
 function closeFullscreen() {
     if (document.exitFullscreen) {
-      document.exitFullscreen();
-      document.querySelector(".FullScreen").style.display = "block" ; 
-    document.querySelector(".FullScreenClose").style.display = "none" ; 
+        document.exitFullscreen();
+        document.querySelector(".FullScreen").style.display = "block";
+        document.querySelector(".FullScreenClose").style.display = "none";
     } else if (document.webkitExitFullscreen) { /* Safari */
-      document.webkitExitFullscreen();
+        document.webkitExitFullscreen();
     } else if (document.msExitFullscreen) { /* IE11 */
-      document.msExitFullscreen();
+        document.msExitFullscreen();
     }
-  }
+}

@@ -145,9 +145,18 @@ p {
 .Anim {
   position: absolute;
   z-index: 9999;
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   height: 100vh;
   background-color: whitesmoke;
-  bottom: 0%;
+  top: 0%;
   transition-duration: 5s;
+}
+
+.Anim p {
+  font-size: 30px;
+  background-color: rgba(245, 245, 245, 0);
 }

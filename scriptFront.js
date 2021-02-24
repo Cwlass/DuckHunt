@@ -14,7 +14,7 @@ function CloseDiv() {
 
 document.querySelector(".SinglePlayer").addEventListener("click", closeHome);
 function closeHome() {
-  document.querySelector(".Anim").style.bottom = "200%";
+  document.querySelector(".Anim").style.top = "200%";
   document.querySelector(".HomeBanner").style.display = "none";
   document.querySelector(".gameSpace").style.display = "block";
   

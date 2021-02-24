@@ -96,19 +96,19 @@ function resetBird() {
     duck.style.transform = "rotate(0deg)"
 }
 
-document.addEventListener('click', function () {
+document.querySelector(".gameSpace").addEventListener('click', function () {
+    console.log("Bang");
     bullets--
     if (bullets == 2) {
-        document.querySelector("Bullet1").style.display = "none";
+        document.querySelector(".Bullet1").style.display = "none";
     }
     if (bullets == 1) {
-        document.querySelector("Bullet2").style.display = "none";
+        document.querySelector(".Bullet2").style.display = "none";
     }
     if (bullets == 0) {
-        document.querySelector("Bullet3").style.display = "none";
-        setTimeout(function () {
-            document.querySelector('gameOver').style.display = "none";
-        }, 1000);
+        document.querySelector(".BShot").style.display = "none";
+        document.querySelector('.gameOver').style.display = "flex";
+
     }
 })
 

@@ -1,4 +1,5 @@
 let shooterScore = 0;
+let birdDead = false;
 let duckLeft = 50;
 let duckBottom = 50;
 let down = false;
@@ -45,24 +46,33 @@ document.addEventListener("keyup", function (event) {
 })
 
 document.querySelector('.duck').addEventListener("click", function () {
-
+    shooterScore++;
+    birdDead = true;
+    document.querySelector('.score').innerHTML = shooterScore;
+    duck.style.backgroundImage = 'url(img/deadDuck.png)';
 })
 
-function killBird() {
 
-}
 
 let t = setInterval(function () {
-    if (up && duckBottom < 95) { duckBottom++; }
-    if (down && duckBottom > 5) { duckBottom--; }
-    if (left && duckLeft > 5) {
-        duckLeft--;
-        duck.style.transform = "scaleX(-1)";
+    if (!birdDead) {
+        if (up && duckBottom < 95) { duckBottom++; }
+        if (down && duckBottom > 5) { duckBottom--; }
+        if (left && duckLeft > 5) {
+            duckLeft--;
+            duck.style.transform = "scaleX(-1)";
+        }
+        if (right && duckLeft < 94) {
+            duckLeft++;
+            duck.style.transform = "scaleX(1)";
+        }
+        duck.style.bottom = duckBottom + '%';
+        duck.style.left = duckLeft + '%';
+    } else {
+        duckBottom--
+        duck.style.bottom = duckBottom + '%';
+        if (duckBottom <= 5) {
+            birdDead = false;
+        }
     }
-    if (right && duckLeft < 94) {
-        duckLeft++;
-        duck.style.transform = "scaleX(1)";
-    }
-    duck.style.bottom = duckBottom + '%';
-    duck.style.left = duckLeft + '%';
 }, 20);

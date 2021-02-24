@@ -7,6 +7,7 @@ let down = false;
 let up = false;
 let left = false;
 let right = false;
+let bullets = 3;
 duck = document.querySelector('.duck');
 //Directoinal Control
 document.addEventListener("keydown", function (event) {
@@ -94,6 +95,25 @@ function resetBird() {
     duck.style.backgroundImage = "url(img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png)"
     duck.style.transform = "rotate(0deg)"
 }
+
+document.addEventListener('click', function () {
+    bullets--
+    if (bullets == 2) {
+        document.querySelector("Bullet1").style.display = "none";
+    }
+    if (bullets == 1) {
+        document.querySelector("Bullet2").style.display = "none";
+    }
+    if (bullets == 0) {
+        document.querySelector("Bullet3").style.display = "none";
+        setTimeout(function () {
+            document.querySelector('gameOver').style.display = "none";
+        }, 1000);
+    }
+})
+
+
+
 // Dany //
 
 document.querySelector(".FullScreen").addEventListener("click", openFullscreen);

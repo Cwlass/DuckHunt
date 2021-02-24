@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.duck{
+    display: block;
+    background-image: url(img/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 5%;
+    bottom:90%;
+    transform: translateX(-50%);
+    transform: translatey(-50%);
+}
+.gameSpace{
+
+min-height: 100vh;
+width: 100%;
+background-image: url(img/394788.png);
+background-size: contain;
+position: relative;
+}

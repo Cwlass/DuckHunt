@@ -44,7 +44,7 @@ p {
 }
 .gameSpace {
   min-height: 100vh;
-  display: none;
+  display: block;
   width: 100%;
   background-image: url(img/394788.png);
   background-size: cover;
@@ -134,4 +134,14 @@ p {
   bottom: 15px;
   font-weight: 800;
   left: 15px;
+}
+
+.Anim {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  bottom: 0%;
+  transition-duration: 5s;
 }
